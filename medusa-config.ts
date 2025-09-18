@@ -14,7 +14,6 @@ module.exports = defineConfig({
     },
     databaseDriverOptions: {
       connection: { ssl: { rejectUnauthorized: false } },
-      ssl: false,
     },
     workerMode: process.env.MEDUSA_WORKER_MODE as
       | "shared"
