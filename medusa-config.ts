@@ -12,10 +12,10 @@ module.exports = defineConfig({
       jwtSecret: process.env.JWT_SECRET || "supersecret",
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     },
-    databaseDriverOptions: {
-      connection: { ssl: { rejectUnauthorized: false } },
-      ssl: false,
-    },
+    // databaseDriverOptions: {
+    //   connection: { ssl: { rejectUnauthorized: false } },
+    //   ssl: false,
+    // },
 
     workerMode: process.env.MEDUSA_WORKER_MODE as
       | "shared"
